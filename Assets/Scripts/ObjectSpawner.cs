@@ -4,19 +4,19 @@ using System.Collections;
 public class ObjectSpawner : MonoBehaviour {
 
 	public GameObject token;
-	public GameObject tree;
+	public GameObject boulder;
 	private float tokenTimer = 2.0f;
-	private float treeTimer = 2.0f;
+	private float boulderTimer = 2.0f;
 
 	void Update () {
 		tokenTimer -= Time.deltaTime;
-		treeTimer -= Time.deltaTime;
+		boulderTimer -= Time.deltaTime;
 
 		if (tokenTimer < 0) {
 			SpawnToken ();
 		}
-		if (treeTimer < 0) {
-			SpawnTree ();
+		if (boulderTimer < 0) {
+			SpawnBoulder ();
 		}
 	}
 
@@ -26,10 +26,11 @@ public class ObjectSpawner : MonoBehaviour {
 		tokenTimer = Random.Range (0.5f, 2.5f);
 	}
 
-	void SpawnTree() {
+	void SpawnBoulder() {
 		var position = new Vector2 (Random.Range (-6, 7), 6);
-		var tr = Instantiate (tree, position, Quaternion.identity) as GameObject;
-		treeTimer = Random.Range (0.5f, 2.5f);
-		tr.GetComponent<Rigidbody2D> ().gravityScale = Random.Range (1, 3);
+
+		var bould = Instantiate (boulder, position, Quaternion.identity) as GameObject;
+		boulderTimer = Random.Range (0.5f, 2.5f);
+		bould.GetComponent<Rigidbody2D> ().gravityScale = Random.Range (1, 3);
 	}
 }

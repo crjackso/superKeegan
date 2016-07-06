@@ -1,9 +1,15 @@
 fileFormatVersion: 2
 guid: 5c2dc4bb2811a4ad892a35f3fdf7df71
-timeCreated: 1467783442
+timeCreated: 1467784465
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: objects_0
+    21300002: objects_1
+    21300004: objects_2
+    21300006: objects_3
+    21300008: objects_4
+    21300010: objects_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +32,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +44,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +55,115 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: objects_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 482
+        width: 121
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.5, y: 51}
+        - {x: -52.5, y: -2}
+        - {x: -10.5, y: -49}
+        - {x: 27.5, y: -49}
+        - {x: 55.5, y: -3}
+        - {x: 55.5, y: 51}
+    - name: objects_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 465
+        width: 140
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -60}
+        - {x: -29, y: -64}
+        - {x: 43, y: -64}
+        - {x: 68, y: -19}
+        - {x: 68, y: 16}
+        - {x: 46, y: 64}
+    - name: objects_2
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 496
+        width: 104
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52, y: 50}
+        - {x: -52, y: -10}
+        - {x: -51, y: -17}
+        - {x: -17, y: -46}
+        - {x: 5, y: -46}
+        - {x: 50, y: -19}
+        - {x: 50, y: 50}
+    - name: objects_3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 483
+        width: 100
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 57.5}
+        - {x: -48, y: 38.5}
+        - {x: -48, y: -25.5}
+        - {x: -46, y: -39.5}
+        - {x: -29, y: -54.5}
+        - {x: 26, y: -54.5}
+        - {x: 34, y: -53.5}
+        - {x: 50, y: -22.5}
+        - {x: 50, y: 28.5}
+        - {x: 28, y: 57.5}
+    - name: objects_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 485
+        width: 123
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.5, y: 55}
+        - {x: -61.5, y: 25}
+        - {x: -61.5, y: 12}
+        - {x: -2.5, y: -57}
+        - {x: 4.5, y: -57}
+        - {x: 61.5, y: 14}
+        - {x: 61.5, y: 31}
+        - {x: 44.5, y: 55}
+    - name: objects_5
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 356
+        width: 81
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: 119.5}
+        - {x: -40.5, y: -117.5}
+        - {x: 35.5, y: -117.5}
+        - {x: 35.5, y: 119.5}
     outline: []
   spritePackingTag: 
   userData: 

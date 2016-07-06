@@ -9,7 +9,7 @@ public class PlayerCollide : MonoBehaviour {
 	public int tokenCount;
 
 	void OnTriggerEnter2D(Collider2D other) {		
-		if (other.tag == "Tree") {
+		if (other.tag == "Boulder") {
 			health--;
 			GetComponent<AudioSource> ().PlayOneShot(playerHurtClip, 0.5f);
 
@@ -17,8 +17,6 @@ public class PlayerCollide : MonoBehaviour {
 				Destroy (gameObject);
 			}
 		} else if (other.tag == "Token") {
-			// get a token
-			Debug.Log("yep");
 			GetComponent<AudioSource> ().PlayOneShot (tokenPickupClip, 0.5f);
 			tokenCount++;
 			Destroy (other.gameObject);
