@@ -6,7 +6,14 @@ public class PlayerCollide : MonoBehaviour {
 	public static int health = 3;
 	public AudioClip tokenPickupClip;
 	public AudioClip playerHurtClip;
-	public int tokenCount;
+	public int tokenValue;
+
+	private GameController gameController;
+
+	void Start() {
+		var gameControllerObject = GameObject.FindWithTag ("GameController");
+		gameController = gameControllerObject.GetComponent<GameController> ();
+	}
 
 	void OnTriggerEnter2D(Collider2D other) {		
 		if (other.tag == "Boulder") {
@@ -18,7 +25,7 @@ public class PlayerCollide : MonoBehaviour {
 			}
 		} else if (other.tag == "Token") {
 			GetComponent<AudioSource> ().PlayOneShot (tokenPickupClip, 0.5f);
-			tokenCount++;
+			gameController.AddScore (tokenValue);
 			Destroy (other.gameObject);
 		}
 	}
